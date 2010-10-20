@@ -12,7 +12,7 @@ module Slim
       compile
     end
 
-    def render(scope = Object.new, locals = {})
+    def render(scope = Object.new, locals = {}, &block)
       scope.instance_eval(optimized)
     end
   end

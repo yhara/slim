@@ -31,6 +31,11 @@ In `config/application.rb`, add the following line near the top (i.e. just below
 
 That's it!
 
+If you prefer Sinatra, add:
+
+    require 'slim/sinatra'
+
+Then you can render views/index.slim by `slim :index'.
 
 ## The syntax
 
